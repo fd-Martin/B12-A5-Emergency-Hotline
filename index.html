@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency-Hotline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .inter-a {
+            font-family: "Inter", sans-serif;
+        }
+
+        .hind-madurai {
+            font-family: "Hind Madurai", sans-serif;
+        }
+    </style>
+
+
 </head>
+
 <body>
-    
+    <!-- header section  -->
+    <header class="container mx-auto border border-red-500 py-3">
+
+        <nav class="flex justify-between items-center px-6 py-3 ">
+            <!-- logo section  -->
+            <div class="">
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <!-- nav button  -->
+            <div class=" flex gap-8 text-center inter-a">
+                <button
+                    class="btn bg-[#41FF6B1A] px-8 py-6  font-black text-black rounded-3xl text-base border-0"><span>0</span>
+                    <img src="./assets/heart.png" class="w-6 h-6 ms-2" alt=""></button>
+                <button
+                    class="btn bg-[#41FF6B1A] px-8 py-6  font-black text-black rounded-3xl text-base border-0"><span>100</span>
+                    <img src="./assets/coin.png" class="w-6 h-6 ms-2" alt=""></button>
+                <button
+                    class="btn bg-[#00A63E] px-8 py-6 text-white font-semibold rounded-3xl text-base border-0"><span>0</span>
+                    Copy</button>
+            </div>
+        </nav>
+
+    </header>
+    <!-- hero section  -->
+    <section class="container mx-auto border border-red-500">
+        <div class="px-[60px] py-3 text-center bg-gradient-to-r from-[rgba(1,49,35,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)]">
+            <img src="./assets/logo-dark.png" class="h-[92px] w-[92px] mx-auto" alt="">
+            <div class="my-5">
+                <h1 class="text-white hind-madurai font-bold text-4xl">Emergency Service Directory</h1>
+                <p class="text-white hind-madurai font-semibold text-[20px]  mt-4">Government Emergency Services at Your Fingertip– A Project by Government of the People’s Republic of Bangladesh</p>
+            </div>
+        </div>
+    </section>
+    <main></main>
+
+
+
 </body>
+
 </html>
