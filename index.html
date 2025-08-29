@@ -10,7 +10,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -22,6 +27,11 @@
         .hind-madurai {
             font-family: "Hind Madurai", sans-serif;
         }
+
+        .roboto {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+        }
     </style>
 
 
@@ -29,9 +39,9 @@
 
 <body>
     <!-- header section  -->
-    <header class="container mx-auto border border-red-500 py-3">
+    <header class="container mx-auto">
 
-        <nav class="flex justify-between items-center px-6 py-3 ">
+        <nav class="flex justify-between items-center px-6 py-6 ">
             <!-- logo section  -->
             <div class="">
                 <img src="./assets/logo.png" alt="">
@@ -52,16 +62,194 @@
 
     </header>
     <!-- hero section  -->
-    <section class="container mx-auto border border-red-500">
-        <div class="px-[60px] py-3 text-center bg-gradient-to-r from-[rgba(1,49,35,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)]">
+    <section class="container mx-auto">
+        <div
+            class="px-[60px] py-5 text-center bg-gradient-to-r from-[rgba(1,49,35,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)]">
             <img src="./assets/logo-dark.png" class="h-[92px] w-[92px] mx-auto" alt="">
             <div class="my-5">
                 <h1 class="text-white hind-madurai font-bold text-4xl">Emergency Service Directory</h1>
-                <p class="text-white hind-madurai font-semibold text-[20px]  mt-4">Government Emergency Services at Your Fingertip– A Project by Government of the People’s Republic of Bangladesh</p>
+                <p class="text-white hind-madurai font-semibold text-[20px]  mt-4">Government Emergency Services at Your
+                    Fingertip– A Project by Government of the People’s Republic of Bangladesh</p>
             </div>
         </div>
     </section>
-    <main></main>
+
+    <main class="container mx-auto bg-[#f5fff6]">
+        <div class="flex flex-row gap-4">
+            <!-- card list  -->
+            <div class="basis-2/3 p-6 grid grid-cols-3 gap-6">
+                <div class="bg-[#ffffff] flex-1 border border-transparent shadow-sm p-4 rounded-3xl">
+                    <div class="flex flex-row items-center justify-between">
+                        <div class="p-2 bg-red-100">
+                            <img src="./assets/fire-service.png" class="w-8 h-8 ">
+                        </div>
+                        <div class="">
+                            <button class=" btn rounded-full w-8 h-8 border border-transparent  text-base"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <h2 class="hind-madurai text-2xl font-bold py-2 text-[#111111] ">Fire Service Number</h2>
+                        <p class="text-[18px] font-normal text-[#5C5C5C] roboto">Fire Service</p>
+                        <h1 class="roboto font-bold text-[32px] mt-3">999</h1>
+                        <p
+                            class="text-center rounded-full p-1 border border-transparent hind-murai text-[18px] text-[#5C5C5C] bg-[#F2F2F2]  w-1/4 me-auto disabled">
+                            Fire</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-between my-5 gap-2">
+                        <button class="btn w-[45%] bg-[#ffffff] roboto text-base font-normal text-[#5C5C5C]"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn w-[45%]  bg-[#00A63E] roboto text-white  text-base border-0 font-normal "><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] flex-1 border border-transparent shadow-sm p-4 rounded-3xl">
+                    <div class="flex flex-row items-center justify-between">
+                        <div class="p-2 bg-red-100">
+                            <img src="./assets/fire-service.png" class="w-8 h-8 ">
+                        </div>
+                        <div class="">
+                            <button class=" btn rounded-full w-8 h-8 border border-transparent  text-base"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <h2 class="hind-madurai text-2xl font-bold py-2 text-[#111111] ">Fire Service Number</h2>
+                        <p class="text-[18px] font-normal text-[#5C5C5C] roboto">Fire Service</p>
+                        <h1 class="roboto font-bold text-[32px] mt-3">999</h1>
+                        <p
+                            class="text-center rounded-full p-1 border border-transparent hind-murai text-[18px] text-[#5C5C5C] bg-[#F2F2F2]  w-1/4 me-auto disabled">
+                            Fire</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-between my-5 gap-2">
+                        <button class="btn w-[45%] bg-[#ffffff] roboto text-base font-normal text-[#5C5C5C]"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn w-[45%]  bg-[#00A63E] roboto text-white  text-base border-0 font-normal "><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] flex-1 border border-transparent shadow-sm p-4 rounded-3xl">
+                    <div class="flex flex-row items-center justify-between">
+                        <div class="p-2 bg-red-100">
+                            <img src="./assets/fire-service.png" class="w-8 h-8 ">
+                        </div>
+                        <div class="">
+                            <button class=" btn rounded-full w-8 h-8 border border-transparent  text-base"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <h2 class="hind-madurai text-2xl font-bold py-2 text-[#111111] ">Fire Service Number</h2>
+                        <p class="text-[18px] font-normal text-[#5C5C5C] roboto">Fire Service</p>
+                        <h1 class="roboto font-bold text-[32px] mt-3">999</h1>
+                        <p
+                            class="text-center rounded-full p-1 border border-transparent hind-murai text-[18px] text-[#5C5C5C] bg-[#F2F2F2]  w-1/4 me-auto disabled">
+                            Fire</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-between my-5 gap-2">
+                        <button class="btn w-[45%] bg-[#ffffff] roboto text-base font-normal text-[#5C5C5C]"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn w-[45%]  bg-[#00A63E] roboto text-white  text-base border-0 font-normal "><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] flex-1 border border-transparent shadow-sm p-4 rounded-3xl">
+                    <div class="flex flex-row items-center justify-between">
+                        <div class="p-2 bg-red-100">
+                            <img src="./assets/fire-service.png" class="w-8 h-8 ">
+                        </div>
+                        <div class="">
+                            <button class=" btn rounded-full w-8 h-8 border border-transparent  text-base"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <h2 class="hind-madurai text-2xl font-bold py-2 text-[#111111] ">Fire Service Number</h2>
+                        <p class="text-[18px] font-normal text-[#5C5C5C] roboto">Fire Service</p>
+                        <h1 class="roboto font-bold text-[32px] mt-3">999</h1>
+                        <p
+                            class="text-center rounded-full p-1 border border-transparent hind-murai text-[18px] text-[#5C5C5C] bg-[#F2F2F2]  w-1/4 me-auto disabled">
+                            Fire</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-between my-5 gap-2">
+                        <button class="btn w-[45%] bg-[#ffffff] roboto text-base font-normal text-[#5C5C5C]"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn w-[45%]  bg-[#00A63E] roboto text-white  text-base border-0 font-normal "><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] flex-1 border border-transparent shadow-sm p-4 rounded-3xl">
+                    <div class="flex flex-row items-center justify-between">
+                        <div class="p-2 bg-red-100">
+                            <img src="./assets/fire-service.png" class="w-8 h-8 ">
+                        </div>
+                        <div class="">
+                            <button class=" btn rounded-full w-8 h-8 border border-transparent  text-base"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <h2 class="hind-madurai text-2xl font-bold py-2 text-[#111111] ">Fire Service Number</h2>
+                        <p class="text-[18px] font-normal text-[#5C5C5C] roboto">Fire Service</p>
+                        <h1 class="roboto font-bold text-[32px] mt-3">999</h1>
+                        <p
+                            class="text-center rounded-full p-1 border border-transparent hind-murai text-[18px] text-[#5C5C5C] bg-[#F2F2F2]  w-1/4 me-auto disabled">
+                            Fire</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-between my-5 gap-2">
+                        <button class="btn w-[45%] bg-[#ffffff] roboto text-base font-normal text-[#5C5C5C]"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn w-[45%]  bg-[#00A63E] roboto text-white  text-base border-0 font-normal "><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] flex-1 border border-transparent shadow-sm p-4 rounded-3xl">
+                    <div class="flex flex-row items-center justify-between">
+                        <div class="p-2 bg-red-100">
+                            <img src="./assets/fire-service.png" class="w-8 h-8 ">
+                        </div>
+                        <div class="">
+                            <button class=" btn rounded-full w-8 h-8 border border-transparent  text-base"><i
+                                    class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <h2 class="hind-madurai text-2xl font-bold py-2 text-[#111111] ">Fire Service Number</h2>
+                        <p class="text-[18px] font-normal text-[#5C5C5C] roboto">Fire Service</p>
+                        <h1 class="roboto font-bold text-[32px] mt-3">999</h1>
+                        <p
+                            class="text-center rounded-full p-1 border border-transparent hind-murai text-[18px] text-[#5C5C5C] bg-[#F2F2F2]  w-1/4 me-auto disabled">
+                            Fire</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-between my-5 gap-2">
+                        <button class="btn w-[45%] bg-[#ffffff] roboto text-base font-normal text-[#5C5C5C]"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn w-[45%]  bg-[#00A63E] roboto text-white  text-base border-0 font-normal "><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-1/3  bg-white p-6">
+                <!-- call history heading  -->
+                <div class=" flex flex-row items-center justify-between px-6 py-5">
+                    <h1 class="text-[#111111] text-[20px] font-medium text-2xl roboto"> <span class="font-normal"> <i
+                                class="fa-regular fa-clock "></i></span>
+                        Call History</h1>
+                    <button
+                        class="btn inter-a bg-[#00A63E] px-8 py-6 text-white font-semibold rounded-3xl text-[16px] border-0 text-center">
+                        Clear</button>
+
+                </div>
+                <!-- call history list  -->
+                <div class="">
+                    <div class="bg-[#fafafa] border border-transparent rounded-lg px-6 py-4 mb-4">vjhvgjh</div>
+                    <div class="bg-[#fafafa] border border-transparent rounded-lg px-6 py-4 mb-4">vjhvgjh</div>
+                    <div class="bg-[#fafafa] border border-transparent rounded-lg px-6 py-4 mb-4">vjhvgjh</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
 
 
 
