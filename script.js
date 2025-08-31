@@ -10,21 +10,21 @@ for (let heart of hearts) {
   });
 }
 
+//copy count
 let copys = document.getElementsByClassName("copied");
+
 for (let copy of copys) {
-
-
   copy.addEventListener("click", function () {
     let CardNumber =
       copy.parentNode.parentNode.children[1].children[2].innerText;
     alert(`☑️Number has copied ${CardNumber}`);
 
-      let copyNumber = document.getElementById("copyNum");
-  let copyNumberConvert = Number(copyNumber.innerText);
-  let numberIncrease = copyNumberConvert + 1;
-  copyNumber.innerText = numberIncrease;
+    let copyNumber = document.getElementById("copyNum");
+    let copyNumberConvert = Number(copyNumber.innerText);
+    let numberIncrease = copyNumberConvert + 1;
+    copyNumber.innerText = numberIncrease;
 
-  navigator.clipboard.writeText(CardNumber);
+    navigator.clipboard.writeText(CardNumber);
   });
 }
 
@@ -43,16 +43,13 @@ for (let callBtn of callBtns) {
     let coinNumber = document.getElementById("coinNum");
     let coinNumberConvert = Number(coinNumber.innerText);
 
-    // 🔴 Check first
     if (coinNumberConvert < 20) {
       alert(`❌ You don't have enough coin;Need atleast 20 coin to call.`);
-      return; 
+      return;
     }
-
 
     let coinDecrease = coinNumberConvert - 20;
     coinNumber.innerText = coinDecrease;
-
 
     let currentTime = new Date();
     let getTime = currentTime.toLocaleTimeString();
@@ -70,8 +67,8 @@ for (let callBtn of callBtns) {
     <div>
     <h1 class="hind-madurai text-lg font-normal">${getTime}</h1>
     </div>`;
+    
     callListBoard.appendChild(div);
-
   });
 }
 
@@ -81,6 +78,3 @@ clear.addEventListener("click", function () {
   document.getElementById("callHistory").innerHTML = "";
   document.getElementById("coinNum").innerText = "100";
 });
-
-
-
