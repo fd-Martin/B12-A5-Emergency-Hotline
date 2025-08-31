@@ -17,7 +17,7 @@ for (let copy of copys) {
   copy.addEventListener("click", function () {
     let CardNumber =
       copy.parentNode.parentNode.children[1].children[2].innerText;
-    alert(`Number has copied ${CardNumber}`);
+    alert(`☑️Number has copied ${CardNumber}`);
 
       let copyNumber = document.getElementById("copyNum");
   let copyNumberConvert = Number(copyNumber.innerText);
@@ -45,20 +45,20 @@ for (let callBtn of callBtns) {
 
     // 🔴 Check first
     if (coinNumberConvert < 20) {
-      alert(`You don't have enough coin;Need atleast 20 coin to call.`);
-      return; // ⛔ Stop here, no append
+      alert(`❌ You don't have enough coin;Need atleast 20 coin to call.`);
+      return; 
     }
 
-    // ✅ Decrease coin
+
     let coinDecrease = coinNumberConvert - 20;
     coinNumber.innerText = coinDecrease;
 
-    // ✅ Get time
+
     let currentTime = new Date();
     let getTime = currentTime.toLocaleTimeString();
 
     alert(`📞 calling ${cardHeadline} ${CardNumber}...`);
-    // ✅ Append new call history item
+
     let callListBoard = document.getElementById("callHistory");
     let div = document.createElement("div");
     div.className = `bg-[#FAFAFA] border border-transparent rounded-lg px-6 py-4 mb-4 shadow-sm flex flex-row items-center justify-between`;
@@ -72,8 +72,6 @@ for (let callBtn of callBtns) {
     </div>`;
     callListBoard.appendChild(div);
 
-    // Optional alert with icon (needs SweetAlert2 for icon)
-    // alert(`⏰ ${cardHeadline}, ${CardSubTitle}, ${CardNumber}`);
   });
 }
 
