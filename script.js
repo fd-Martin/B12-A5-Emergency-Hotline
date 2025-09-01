@@ -44,7 +44,7 @@ for (let callBtn of callBtns) {
     let coinNumberConvert = Number(coinNumber.innerText);
 
     if (coinNumberConvert < 20) {
-      alert(`❌ You don't have enough coin;Need atleast 20 coin to call.`);
+      alert(`❌ You don't have enough coin; Need atleast 20 coin to call.`);
       return;
     }
 
@@ -67,7 +67,7 @@ for (let callBtn of callBtns) {
     <div>
     <h1 class="hind-madurai text-lg font-normal">${getTime}</h1>
     </div>`;
-    
+
     callListBoard.appendChild(div);
   });
 }
